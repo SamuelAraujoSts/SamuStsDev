@@ -1,24 +1,107 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <style
-           parallax{
-           background-image: url("background_parallax.jpg");
-           min-height: 500px;
-           background-attachment: fixed;
-           background-position: center;
-           background-repeat: no-repeat;
-           background-size: cover;
-           
-           }
+    <title>Samuel - Portfólio</title>
+    <style type="text/css">
+
+        /*Logo*/
+        .header {
+            text-transform: uppercase;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 20px;
+        }
+        .header a{
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+        }
+        .header img.logo {
+            width: 50px;
+        }
+    
+        /*Menu Inicial - Header*/
+        .header_right_inicial {
+            float: right;
+        }
+        .header_right_text {
+            width: 100%;
+            margin-left: auto;
+            margin-right: 70%;
+        }
+        .header_right_text_nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /*Efeitos Parallax - Body*/
+        .parallax1, .parallax2 {
+            position: relative;
+            opacity: 0.60;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parallax1 {
+            background-image: url(/images/background_parallax.jpg);
+            min-height: 1000px;
+        }
+        .parallax2 {
+            background-image: url(/images/Astronaut.jpg);
+            min-height: 600px;
+        }
+        .container-contact{
+            background-color: grey;
+            padding: 100px;
+        }
+        /*Menu Contato*/
+        .menu-principal {
+            display: flex;
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
-    <div>Menu Superior</div>
-    <div class="parallax"></div>
-    <div class="delimiter">Projetos</div>
+    <header class="header">
+        <a href="index.html"></a>
+        <img class="logo" src="/images/logo_linkedin.jpeg">
+        <section class=header_right_inicial>    
+            <nav class="header_right_text">
+                <ul class="header_right_text_nav">
+                    <a href="index.html">Home</a>
+                    <a href="https://www.linkedin.com/in/samuel-araujo-sts/">Linkedin</a>
+                    <a href="#contact">Contato</a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <div class="parallax1"></div>
+    <div style="text-align: center;padding: 50px">
+        <h3>Meus Projetos</h3>
+        <p>Realizei um projeto de {nome_projeto} utilizando as ferramentas {nome_ferramentas}</p>
+    </div>
+    <div class="parallax2"></div>
+    <div style="padding: 50px;"></div>
+    <section>
+        <div class="container-contact">
+            <div style="height: 10%;">
+                <h2 style="color: aliceblue;; ">Contato</h2>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
