@@ -1,15 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/04766f15df.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Samuel - Portfólio</title>
+    <link rel="stylesheet" href="css/reset.css">
     <style type="text/css">
-
         /*Logo*/
         .header {
             text-transform: uppercase;
             overflow: hidden;
-            background-color: #f1f1f1;
+            background-color: #151515;
             padding: 20px 20px;
         }
         .header a{
@@ -50,21 +51,51 @@
             background-size: cover;
         }
         .parallax1 {
-            background-image: url(/images/background_parallax.jpg);
+            background-image: url(images/background_parallax.jpg);
             min-height: 1000px;
         }
         .parallax2 {
-            background-image: url(/images/Astronaut.jpg);
+            background-image: url(images/Astronaut.jpg);
             min-height: 600px;
         }
+         /*Rodapé Contato*/
+         .footer {
+            background-color: #151515;
+         }
         .container-contact{
-            background-color: grey;
+            /*background-color: darkgrey;*/
             padding: 100px;
         }
-        /*Menu Contato*/
-        .menu-principal {
+        .element_contact {
             display: flex;
-            text-align: right;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        .element_column {
+            font-size: 50px;
+        }
+        .element_row_icons_title {
+            text-align: center;
+            color: #F7FE2E;
+        }
+        .element_row_icons i {
+            width: 40px;
+            font-size: 25px;
+            color: #DF0101;
+        }
+
+        /*Menu Contato Final*/
+        .element_contact_end {
+            /*background-color: grey;*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .element_column_end {
+            margin-left: 30px;
+            margin-right: 40px;
         }
 
     </style>
@@ -72,13 +103,13 @@
 <body>
     <header class="header">
         <a href="index.html"></a>
-        <img class="logo" src="/images/logo_linkedin.jpeg">
+        <img class="logo" src="images/logo_linkedin.jpeg">
         <section class=header_right_inicial>    
             <nav class="header_right_text">
                 <ul class="header_right_text_nav">
-                    <a href="index.html">Home</a>
-                    <a href="https://www.linkedin.com/in/samuel-araujo-sts/">Linkedin</a>
-                    <a href="#contact">Contato</a>
+                    <a style="color: #0101DF;" href="index.html">&lt;Home&gt;</a>
+                    <a style="color: #DF0101;" href="https://www.linkedin.com/in/samuel-araujo-sts/">${Linkedin}</a>
+                    <a style="color: #F7FE2E;" href="#Contact">&lt;Contato&gt;</a>
                 </ul>
             </nav>
         </section>
@@ -89,19 +120,33 @@
         <p>Realizei um projeto de {nome_projeto} utilizando as ferramentas {nome_ferramentas}</p>
     </div>
     <div class="parallax2"></div>
-    <div style="padding: 50px;"></div>
-    <section>
+    <footer id="Contact">
         <div class="container-contact">
-            <div style="height: 10%;">
-                <h2 style="color: aliceblue;; ">Contato</h2>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+            <div class="element_contact">
+                <div class="element-column">
+                    <div class="element_row_icons_title">
+                        [Redes Sociais]
+                    </div>
+                    <span class="element_row_icons">
+                        <a href="https://www.linkedin.com/in/samuel-araujo-sts/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="samuelaraujo.sts@gmail.com" title="Email"><i class="fa-solid fa-inbox"></i></a>
+                        <a href="samuelaraujo.sts@gmail.com"><i class="fa-brands fa-github"></i></a>
+                    </span>
+                </div>
+                <div class="element-column">
+                    <h2 style="color: #DF0101;">&lt;Samuel Araujo&gt;</h2>
+                    <p style="text-align: center;">Desenvolvedor Web focado em Back-End com experiencia em C#, ASP.Net, .NET e SQLServer.</p>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="element_contact_end">
+            <div class="element_column_end">
+                <p>© Todos os direitos Reservados</p>
+            </div>
+            <div class="element_column_end">
+                <p>Samuel Araujo Inc, 2024</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
